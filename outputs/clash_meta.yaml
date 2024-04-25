@@ -11,25 +11,6 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: ☁ WARP
-  type: wireguard
-  server: 162.159.192.1
-  port: 2408
-  ip: 172.16.0.2
-  ipv6: 2606:4700:110:87ad:b400:91:eadb:887f
-  private-key: QNbUNHY5lMMxhoaqrDjLtd+dodakZnrnBVsttAecpkE=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  udp: true
-  ip-version: ipv6-prefer
-  reserved:
-  - 99
-  - 204
-  - 140
-  remote-dns-resolve: true
-  dns:
-  - 1.1.1.1
-  - 8.8.8.8
-  dialer-proxy: ☁ WARP前置节点
 - name: 🇺🇸 US-tuic | 0-1
   server: 74.63.233.74
   port: 33441
@@ -262,7 +243,6 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -301,56 +281,11 @@ proxy-groups:
   - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
-- name: ⚖ 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  strategy: consistent-hashing
-  proxies:
-  - 🇺🇸 US-tuic | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
-  - 🏳 Unknown-vmess | 1-3
-  - 🏳 Unknown-vmess | 1-4
-  - 🇺🇸 US-vless | 2-1
-  - 🇺🇸 US-ss | 6-1
-  - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-Hysteria | 0-0
-  - 🇫🇷 FR-Hysteria | 1-0
-  - 🇺🇸 US-Hysteria | 3-0
-  - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
-- name: ☁ WARP前置节点
-  type: select
-  proxies:
-  - ⚖ 负载均衡
-  - ♻️ 自动选择
-  - 🎯 全球直连
-  - 🇺🇸 US-tuic | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
-  - 🏳 Unknown-vmess | 1-3
-  - 🏳 Unknown-vmess | 1-4
-  - 🇺🇸 US-vless | 2-1
-  - 🇺🇸 US-ss | 6-1
-  - 🇺🇸 US-hysteria2 | 7-1
-  - 🇺🇸 US-Hysteria | 0-0
-  - 🇫🇷 FR-Hysteria | 1-0
-  - 🇺🇸 US-Hysteria | 3-0
-  - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
-  - 🏳 Unknown-vless | 1-0
-  - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -372,7 +307,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -394,7 +328,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -416,7 +349,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -438,7 +370,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -460,7 +391,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -482,7 +412,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -504,7 +433,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -526,7 +454,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -548,7 +475,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
@@ -579,7 +505,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - ☁ WARP
   - 🇺🇸 US-tuic | 0-1
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
