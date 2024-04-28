@@ -41,7 +41,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: hang-broke-john-neither.trycloudflare.com
-- name: 🇺🇸 US-vmess | 0-3
+- name: 🏳 Unknown-vmess | 0-3
   type: vmess
   server: yh1.dtku41.xyz
   port: 8080
@@ -254,7 +254,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -278,7 +278,7 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -301,7 +301,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -324,7 +324,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -347,7 +347,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -370,7 +370,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -393,7 +393,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -416,7 +416,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -439,7 +439,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -462,7 +462,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -485,7 +485,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -508,7 +508,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
@@ -540,7 +540,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇺🇸 US-vmess | 0-3
+  - 🏳 Unknown-vmess | 0-3
   - 🏳 Unknown-vmess | 0-4
   - 🇺🇸 US-vless | 1-1
   - 🇺🇸 US-ss | 5-1
