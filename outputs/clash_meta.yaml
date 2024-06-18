@@ -41,9 +41,9 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: 🏳 Unknown-vmess | 2-3
+- name: 🇨🇦 CA-vmess | 2-3
   type: vmess
-  server: 104.19.38.28
+  server: 23.227.38.7
   port: 8080
   cipher: auto
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -178,9 +178,9 @@ proxies:
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸 US-vless | 1-0
+- name: 🏳 Unknown-vless | 1-0
   type: vless
-  server: yh6.dtku41.xyz
+  server: yh4.dtku41.xyz
   port: 443
   uuid: ebfdccb6-7416-4b6e-860d-98587344d500
   tls: true
@@ -195,7 +195,7 @@ proxies:
     serviceName: /
 - name: 🏳 Unknown-vless | 2-0
   type: vless
-  server: yh9.dtku41.xyz
+  server: yh1.dtku41.xyz
   port: 443
   uuid: ebfdccb6-7416-4b6e-860d-98587344d500
   tls: true
@@ -208,7 +208,7 @@ proxies:
       Host: lg1.freessr2.xyz
   grpc-opts:
     serviceName: /
-- name: 🏳 Unknown-vless | 3-0
+- name: 🇺🇸 US-vless | 3-0
   type: vless
   server: yh7.dtku41.xyz
   port: 443
@@ -231,7 +231,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -241,9 +241,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -252,7 +252,7 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -262,9 +262,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -272,7 +272,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -282,9 +282,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -292,7 +292,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -302,9 +302,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -312,7 +312,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -322,9 +322,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -332,7 +332,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -342,9 +342,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -352,7 +352,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -362,9 +362,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -372,7 +372,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -382,9 +382,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -392,7 +392,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -402,9 +402,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -412,7 +412,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -422,9 +422,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -432,7 +432,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -442,9 +442,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -452,7 +452,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -462,9 +462,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -481,7 +481,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 2-1
   - 🇺🇸 US-vmess | 2-2
-  - 🏳 Unknown-vmess | 2-3
+  - 🇨🇦 CA-vmess | 2-3
   - 🏳 Unknown-vmess | 2-4
   - 🇺🇸 US-vless | 4-1
   - 🇺🇸 US-ss | 5-1
@@ -491,9 +491,9 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇺🇸 US-vless | 1-0
+  - 🏳 Unknown-vless | 1-0
   - 🏳 Unknown-vless | 2-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇺🇸 US-vless | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
