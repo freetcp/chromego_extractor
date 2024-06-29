@@ -51,8 +51,8 @@ proxies:
   - h3
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
-  server: 104.192.224.141
-  port: 36252
+  server: 166.88.159.24
+  port: 40931
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
