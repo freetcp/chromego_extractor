@@ -129,9 +129,9 @@ proxies:
   h2-opts:
     path: /
     host: []
-- name: 🏳 Unknown-vmess | 2-0
+- name: 🇺🇸 US-vmess | 2-0
   type: vmess
-  server: 162.159.141.11
+  server: 172.64.170.111
   port: 2082
   uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
   alterId: 0
@@ -185,7 +185,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: ♻️ 自动选择
   type: url-test
@@ -203,7 +203,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 📺 巴哈姆特
   type: select
@@ -220,7 +220,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 📺 哔哩哔哩
   type: select
@@ -237,7 +237,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🌏 国内媒体
   type: select
@@ -254,7 +254,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🌍 国外媒体
   type: select
@@ -271,7 +271,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 📲 电报信息
   type: select
@@ -288,7 +288,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -305,7 +305,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -322,7 +322,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🍎 苹果服务
   type: select
@@ -339,7 +339,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 📢 谷歌FCM
   type: select
@@ -356,7 +356,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🤖 OpenAI
   type: select
@@ -373,7 +373,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🎯 全球直连
   type: select
@@ -399,7 +399,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🏳 Unknown-vmess | 2-0
+  - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
