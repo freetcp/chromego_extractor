@@ -15,7 +15,7 @@ A python script to extract ChromeGo Proxies
 
 ## 使用说明
 ### 订阅链接：
-> 本项目已配置Github Actions自动运行，最近提取于：`UTC 2024-07-20 12:09:41`
+> 本项目已配置Github Actions自动运行，最近提取于：`UTC 2024-07-21 00:33:34`
 
 #### 4. 获取代理信息
 脚本将提取 ChromeGo 代理节点信息，并保存到`outputs`目录中。
