@@ -17,14 +17,13 @@ dns:
 proxies:
 - name: ☁ WARP
   type: wireguard
-  server: engage.cloudflareclient.com
+  server: 162.159.195.1
   port: 2408
   ip: 172.16.0.2
   ipv6: 2606:4700:110:88c0:f899:9068:1294:2478
   private-key: eLdkQHDQiSdyjYJ167BF7vPfbJnisW01NnxtHm+tCWY=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   udp: true
-  ip-version: ipv6-prefer
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
