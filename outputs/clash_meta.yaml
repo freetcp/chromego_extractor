@@ -221,9 +221,7 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选择
-  - DIRECT
   - ⚖ 负载均衡
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -241,7 +239,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -256,10 +253,9 @@ proxy-groups:
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
-  interval: 180
+  interval: 300
   strategy: consistent-hashing
   proxies:
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -294,7 +290,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -311,7 +306,6 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -328,7 +322,6 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -346,7 +339,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -380,7 +372,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - .*
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
