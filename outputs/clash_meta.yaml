@@ -270,7 +270,6 @@ proxy-groups:
 - name: 🎯 全球直连
   type: select
   proxies:
-  - DIRECT
   - 🚀 节点选择
   - ♻️ 自动选择
 - name: 🌍 国外媒体
