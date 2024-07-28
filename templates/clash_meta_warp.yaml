@@ -16,12 +16,12 @@ proxies:
     server: 162.159.192.137
     port: 2408
     ip: 172.16.0.2
-    ipv6: 2606:4700:110:8105:34c8:d78:901f:82dc
-    private-key: APR1Xrc1Gfp9P3WHhFpXHzaJ6KYjqpM52vYli3H8GmM=
+    ipv6: 2606:4700:110:8161:e17e:8b39:6869:dd8e
+    private-key: KM+fF0fzWa7USF0Fn/LBe+uX3u/yxl/17BXITYvLgVY=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     udp: true
     ip-version: ipv6-prefer
-    reserved: []
+    reserved: [99,204,140]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "☁ WARP前置节点"
@@ -30,7 +30,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🎯 全球直连
+      - ⚖ 负载均衡
       - ☁ WARP
 
   - name: ♻️ 自动选择
