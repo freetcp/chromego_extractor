@@ -17,7 +17,7 @@ dns:
 proxies:
 - name: ☁ WARP
   type: wireguard
-  server: 162.159.192.137
+  server: 162.159.192.1
   port: 2408
   ip: 172.16.0.2
   ipv6: 2606:4700:110:88c0:f899:9068:1294:2478
