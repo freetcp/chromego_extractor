@@ -13,15 +13,15 @@ global-client-fingerprint: chrome
 proxies:
   - name: ☁ WARP
     type: wireguard
-    server: 162.159.192.1
+    server: 162.159.192.137
     port: 2408
     ip: 172.16.0.2
-    ipv6: 2606:4700:110:87ad:b400:91:eadb:887f
-    private-key: QNbUNHY5lMMxhoaqrDjLtd+dodakZnrnBVsttAecpkE=
+    ipv6: 2606:4700:110:8105:34c8:d78:901f:82dc
+    private-key: APR1Xrc1Gfp9P3WHhFpXHzaJ6KYjqpM52vYli3H8GmM=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     udp: true
     ip-version: ipv6-prefer
-    reserved: [99,204,140]
+    reserved: []
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "☁ WARP前置节点"
