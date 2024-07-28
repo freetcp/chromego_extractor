@@ -221,7 +221,7 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选择
-  - 🎯 全球直连
+  - DIRECT
   - ⚖ 负载均衡
   - .*
   - 🏳 Unknown-ss | 4-1
