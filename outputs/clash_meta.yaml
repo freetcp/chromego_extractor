@@ -267,6 +267,12 @@ proxy-groups:
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
 - name: 🌍 国外媒体
   type: select
   proxies:
