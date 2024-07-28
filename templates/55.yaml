@@ -124,6 +124,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - .*
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - .*
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,6 +162,13 @@ rule-providers:
     format: text
     interval: 3600
     path: ./ACL4SSR/ACL4SSR/LocalAreaNetwork.list
+  UnBan:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    format: text
+    interval: 3600
+    path: ./ACL4SSR/ACL4SSR/UnBan.list
   BanAD:
     type: http
     behavior: classical
@@ -169,6 +183,13 @@ rule-providers:
     format: text
     interval: 3600
     path: ./ACL4SSR/ACL4SSR/BanProgramAD.list
+  GoogleFCM:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+    format: text
+    interval: 3600
+    path: ./ACL4SSR/ACL4SSR/GoogleFCM.list
   GoogleCN:
     type: http
     behavior: classical
@@ -197,13 +218,6 @@ rule-providers:
     format: text
     interval: 3600
     path: ./ACL4SSR/ACL4SSR/Apple.list
-  ProxyMedia:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/ProxyMedia.list
   Telegram:
     type: http
     behavior: classical
@@ -211,6 +225,13 @@ rule-providers:
     format: text
     interval: 3600
     path: ./ACL4SSR/ACL4SSR/Telegram.list
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    format: text
+    interval: 3600
+    path: ./ACL4SSR/ACL4SSR/ProxyMedia.list
   ProxyLite:
     type: http
     behavior: classical
@@ -234,14 +255,16 @@ rule-providers:
     path: ./ACL4SSR/ACL4SSR/ChinaCompanyIp.list
 rules:
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
   - RULE-SET,BanAD,🛑 全球拦截
   - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
   - RULE-SET,GoogleCN,🎯 全球直连
   - RULE-SET,SteamCN,🎯 全球直连
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
   - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,ProxyMedia,🌍 国外媒体
   - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyMedia,🌍 国外媒体
   - RULE-SET,ProxyLite,🚀 节点选择
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
