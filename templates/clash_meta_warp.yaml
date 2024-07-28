@@ -24,7 +24,7 @@ proxies:
     reserved: [99,204,140]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "☁ WARP前置节点"
+    dialer-proxy: "☁ WARP"
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -47,7 +47,7 @@ proxy-groups:
     strategy: consistent-hashing
     proxies:
 
-  - name: ☁ WARP前置节点
+  - name: ☁ WARP
     type: select
     proxies:
       - ⚖ 负载均衡
