@@ -17,7 +17,7 @@ dns:
 proxies:
 - name: ☁ WARP
   type: wireguard
-  server: 162.159.192.137
+  server: 162.159.192.1
   port: 2408
   ip: 172.16.0.2
   ipv6: 2606:4700:110:8161:e17e:8b39:6869:dd8e
@@ -33,7 +33,7 @@ proxies:
   dns:
   - 1.1.1.1
   - 8.8.8.8
-  dialer-proxy: ☁ WARP
+  dialer-proxy: ☁ WARP前置节点
 - name: 🏳 Unknown-ss | 4-1
   type: ss
   server: 23.170.40.77
@@ -225,12 +225,23 @@ proxy-groups:
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
-- name: ☁ WARP
+- name: ☁ WARP前置节点
   type: select
   proxies:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🏳 Unknown-ss | 4-1
+  - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
