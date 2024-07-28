@@ -155,7 +155,7 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选择
-  - 🎯 全球直连
+  - ⚖ 负载均衡
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-Hysteria | 0-0
@@ -172,6 +172,23 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
+  proxies:
+  - 🏳 Unknown-ss | 4-1
+  - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
+- name: ⚖ 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: consistent-hashing
   proxies:
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
