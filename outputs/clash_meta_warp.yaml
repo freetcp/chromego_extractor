@@ -29,7 +29,7 @@ proxies:
   dns:
   - 1.1.1.1
   - 8.8.8.8
-  dialer-proxy: ☁ WARP前置节点
+  dialer-proxy: ☁ WARP
 - name: 🏳 Unknown-ss | 4-1
   type: ss
   server: 23.170.40.77
@@ -221,23 +221,12 @@ proxy-groups:
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
-- name: ☁ WARP前置节点
+- name: ☁ WARP
   type: select
   proxies:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-ss | 4-1
-  - 🇨🇳 TW-ss | 7-1
-  - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 4-0
-  - 🇺🇸 US-Hysteria2 | 5-0
-  - 🇺🇸 US-Hysteria2 | 6-0
-  - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🏳 Unknown-vmess | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
