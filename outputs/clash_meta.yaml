@@ -99,6 +99,12 @@ proxies:
     host: nijigen-works.jp
     password: LdjpJtNZK+2WhXfRY+FxR9sokcOYoddKAx8dN7q8FOI=
     version: 3
+- name: 🇺🇸 US-ss | 9-1
+  type: ss
+  server: 108.181.22.130
+  port: 11256
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 38.135.52.192
@@ -143,7 +149,7 @@ proxies:
   skip-cert-verify: true
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
-  server: 104.19.32.26
+  server: 104.19.32.33
   port: 2082
   uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
   alterId: 0
@@ -201,6 +207,26 @@ proxies:
   h2-opts:
     path: /
     host: []
+- name: 🏳 Unknown-vmess | 3-0
+  type: vmess
+  server: 104.19.32.26
+  port: 2082
+  uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2-2.freessr2.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -209,6 +235,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -217,6 +244,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -225,6 +253,7 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -233,6 +262,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -241,6 +271,7 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -249,6 +280,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -263,6 +295,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -271,6 +304,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -278,6 +312,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -286,6 +321,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -293,6 +329,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -301,6 +338,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -308,6 +346,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -316,6 +355,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -324,6 +364,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -332,6 +373,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🛑 全球拦截
   type: select
   proxies:
@@ -350,6 +392,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🏳 Unknown-ss | 4-1
   - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
@@ -358,6 +401,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 rule-providers:
   LocalAreaNetwork:
     type: http
