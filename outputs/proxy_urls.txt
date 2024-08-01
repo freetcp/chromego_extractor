@@ -1,4 +1,4 @@
-hysteria://104.166.125.163:11001/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 0-0
+hysteria://166.1.221.169:11223/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 0-0
 hysteria2://dongtaiwang.com@207.90.239.157:15669/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@104.192.224.139:40391/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 4-0
 hysteria2://dongtaiwang.com@104.192.224.142:40391/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 5-0
