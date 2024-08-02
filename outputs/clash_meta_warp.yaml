@@ -59,6 +59,20 @@ proxies:
   password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
+  server: 91.149.239.23
+  port: 11223
+  ports: 11223
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇺🇸 US-Hysteria | 1-0
+  type: hysteria
   server: 166.1.221.169
   port: 11223
   ports: 11223
@@ -190,6 +204,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -208,6 +223,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -226,6 +242,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -244,6 +261,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -262,6 +280,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -280,6 +299,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -298,6 +318,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -316,6 +337,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -334,6 +356,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -352,6 +375,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -370,6 +394,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -388,6 +413,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -406,6 +432,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -424,6 +451,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -451,6 +479,7 @@ proxy-groups:
   - 🇨🇳 TW-ss | 7-1
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
