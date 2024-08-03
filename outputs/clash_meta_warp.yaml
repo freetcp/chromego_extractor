@@ -16,14 +16,19 @@ dns:
   - tls://dns.google:853
 proxies:
 - name: ☁ WARP
-  type: wireguard
-  server: 162.159.192.1
-  port: 2408
-  ip: 172.16.0.2
-  ipv6: 2606:4700:110:88c0:f899:9068:1294:2478
-  private-key: eLdkQHDQiSdyjYJ167BF7vPfbJnisW01NnxtHm+tCWY=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
+  cipher: auto
   udp: true
+  tls: true
+  network: ws
+  servername: edt.freews.eu.org
+  ws-opts:
+    path: /proxyip=proxyip.us.fxxk.dedyn.io
+    headers:
+      Host: edt.freews.eu.org
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
