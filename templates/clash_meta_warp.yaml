@@ -44,13 +44,6 @@ proxies:
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "☁ WARP前置节点"
 proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ⚖ 负载均衡
-      - ☁ WARP
-
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -64,6 +57,13 @@ proxy-groups:
     interval: 300
     strategy: consistent-hashing
     proxies:
+    
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ⚖ 负载均衡
+      - ☁ WARP
 
   - name: ☁ WARP前置节点
     type: select
@@ -71,16 +71,16 @@ proxy-groups:
       - ⚖ 负载均衡
       - ♻️ 自动选择
 
-  - name: 🌍选择代理
+  - name: 🌍 选择代理
     type: select
     proxies:
       - ⚖ 负载均衡
       - ♻️ 自动选择
       - ☁ WARP前置节点
-      - DIRECT
+      - ☁ WARP
 
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理
+  - MATCH,🌍 选择代理
   
