@@ -35,11 +35,11 @@ proxies:
   udp: true
   tls: true
   network: ws
-  servername: edt.freews.eu.org
+  servername: trojan.freews.eu.org
   ws-opts:
-    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+    path: /?ed=2560
     headers:
-      Host: edt.freews.eu.org
+      Host: trojan.freews.eu.org
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
