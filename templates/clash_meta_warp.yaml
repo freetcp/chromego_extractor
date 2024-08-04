@@ -82,7 +82,7 @@ proxies:
     server: ct.090227.xyz
     port: 443
     password: 2281ea89-805f-45fa-8902-6e4ad0e26666
-    udp: true
+    udp: false
     tls: true
     sni: trojan.freews.eu.org
     network: ws
