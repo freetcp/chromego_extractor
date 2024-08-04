@@ -75,9 +75,9 @@ proxy-groups:
 - name: 🌍选择代理
   type: select
   proxies:
-    - 负载均衡
-    - 自动选择
-    - WARP前置节点
+    - ⚖ 负载均衡
+    - ♻️ 自动选择
+    - ☁ WARP前置节点
     - DIRECT
 
 rules:
