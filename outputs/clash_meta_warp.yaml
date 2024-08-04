@@ -209,25 +209,6 @@ proxies:
     path: /
     host: []
 proxy-groups:
-- name: 🚀 节点选择
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - ⚖ 负载均衡
-  - ☁ WARP
-  - 🏳 Unknown-ss | 4-1
-  - 🇨🇳 TW-ss | 7-1
-  - 🇺🇸 US-ss | 9-1
-  - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
-  - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 4-0
-  - 🇺🇸 US-Hysteria2 | 5-0
-  - 🇺🇸 US-Hysteria2 | 6-0
-  - 🏳 Unknown-vmess | 0-0
-  - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
-  - 🏳 Unknown-vmess | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -266,6 +247,25 @@ proxy-groups:
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - ☁ WARP
+  - 🏳 Unknown-ss | 4-1
+  - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
+  - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -284,14 +284,14 @@ proxy-groups:
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
-- name: 🌍选择代理
+- name: 🌍 选择代理
   type: select
   proxies:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - ☁ WARP前置节点
-  - DIRECT
+  - ☁ WARP
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,🌍选择代理
+- MATCH,🌍 选择代理
