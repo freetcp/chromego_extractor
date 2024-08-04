@@ -248,6 +248,25 @@ proxy-groups:
   - 🏳 Unknown-vmess | 1-0
   - 🇺🇸 US-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - ☁ WARP
+  - 🏳 Unknown-ss | 4-1
+  - 🇨🇳 TW-ss | 7-1
+  - 🇺🇸 US-ss | 9-1
+  - 🇺🇸 US-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria | 1-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -271,6 +290,7 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - ⚖ 负载均衡
+  - 🚀 节点选择
   - ☁ WARP
 rules:
 - GEOIP,LAN,DIRECT
