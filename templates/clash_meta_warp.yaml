@@ -1,4 +1,3 @@
-
 port: 7890
 allow-lan: true
 mode: rule
@@ -72,13 +71,13 @@ proxy-groups:
       - ⚖ 负载均衡
       - ♻️ 自动选择
 
-- name: 🌍选择代理
-  type: select
-  proxies:
-    - ⚖ 负载均衡
-    - ♻️ 自动选择
-    - ☁ WARP前置节点
-    - DIRECT
+  - name: 🌍选择代理
+    type: select
+    proxies:
+      - ⚖ 负载均衡
+      - ♻️ 自动选择
+      - ☁ WARP前置节点
+      - DIRECT
 
 rules:
   - GEOIP,LAN,DIRECT
