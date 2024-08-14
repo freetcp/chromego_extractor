@@ -29,8 +29,8 @@ dns:
 proxies:
   - name: ☁ WARP
     type: vless
-    server: cdn.2020111.xyz
-    port: 2053
+    server: ct.090227.xyz
+    port: 443
     uuid: 2281ea89-805f-45fa-8902-6e4ad0e26666
     encryption: none
     udp: true
