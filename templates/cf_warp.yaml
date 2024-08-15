@@ -36,7 +36,7 @@ proxies:
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "☁ WARP前置节点"
-proxies:
+    
 - name: CF_V8_ct.090227.xyz_443
   type: vless
   server: ct.090227.xyz
@@ -122,7 +122,7 @@ proxies:
       Host: trojan.freews.eu.org
 
 proxy-groups:
-- name: 负载均衡
+- name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -134,7 +134,7 @@ proxy-groups:
     - CF_V12_ct.xxxxxxxx.tk_2087
     - CF_V13_cm.xxxxxxxx.tk_2096
 
-- name: 自动选择
+- name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -146,14 +146,27 @@ proxy-groups:
     - CF_V11_cn.xxxxxxxx.tk_2083
     - CF_V12_ct.xxxxxxxx.tk_2087
     - CF_V13_cm.xxxxxxxx.tk_2096
-
-- name: 🌍选择代理
+    
+- name: ☁ WARP前置节点
   type: select
   proxies:
-    - 负载均衡
-    - 自动选择
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - CF_V8_ct.090227.xyz_443
+  - CF_V9_cmcc.090227.xyz_8443
+  - CF_V10_cf.zhetengsha.eu.org_2053
+  - CF_V11_cn.xxxxxxxx.tk_2083
+  - CF_V12_ct.xxxxxxxx.tk_2087
+  - CF_V13_cm.xxxxxxxx.tk_2096
+  
+- name: 🌍 选择代理
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - ☁ WARP
 
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理
+  - MATCH,🌍 选择代理
