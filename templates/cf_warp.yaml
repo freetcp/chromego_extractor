@@ -25,7 +25,17 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-
+proxies:
+  - name: ☁ WARP
+  type: hysteria2
+  server: 207.90.239.157
+  port: 15669
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+    remote-dns-resolve: true  
+    dns: [ 1.1.1.1, 8.8.8.8 ]
+    dialer-proxy: "☁ WARP前置节点"
 proxies:
 - name: CF_V8_ct.090227.xyz_443
   type: vless
