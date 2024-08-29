@@ -24,188 +24,36 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-proxies: []
+      
 proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ⚖ 负载均衡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+
   - name: ⚖ 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     strategy: consistent-hashing
     proxies:
-  - name: 🎯 全球直连
+    
+  - name: 🚀 节点选择
     type: select
     proxies:
-      - DIRECT
-      - 🚀 节点选择
       - ♻️ 自动选择
-  - name: 🌍 国外媒体
+      - ⚖ 负载均衡
+
+  - name: 🌍 选择代理
     type: select
     proxies:
-      - 🚀 节点选择
       - ♻️ 自动选择
-      - 🎯 全球直连
-  - name: 📲 电报信息
-    type: select
-    proxies:
+      - ⚖ 负载均衡
       - 🚀 节点选择
-      - 🎯 全球直连
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚀 节点选择
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-rule-providers:
-  LocalAreaNetwork:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/LocalAreaNetwork.list
-  UnBan:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/UnBan.list
-  BanAD:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/BanAD.list
-  BanProgramAD:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/BanProgramAD.list
-  GoogleFCM:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/GoogleFCM.list
-  GoogleCN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/GoogleCN.list
-  SteamCN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/SteamCN.list
-  Microsoft:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/Microsoft.list
-  Apple:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/Apple.list
-  Telegram:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/Telegram.list
-  ProxyMedia:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/ProxyMedia.list
-  ProxyLite:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/ProxyLite.list
-  ChinaDomain:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/ChinaDomain.list
-  ChinaCompanyIp:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    format: text
-    interval: 3600
-    path: ./ACL4SSR/ACL4SSR/ChinaCompanyIp.list
+
 rules:
-  - RULE-SET,LocalAreaNetwork,🎯 全球直连
-  - RULE-SET,UnBan,🎯 全球直连
-  - RULE-SET,BanAD,🛑 全球拦截
-  - RULE-SET,BanProgramAD,🍃 应用净化
-  - RULE-SET,GoogleFCM,📢 谷歌FCM
-  - RULE-SET,GoogleCN,🎯 全球直连
-  - RULE-SET,SteamCN,🎯 全球直连
-  - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,Telegram,📲 电报信息
-  - RULE-SET,ProxyMedia,🌍 国外媒体
-  - RULE-SET,ProxyLite,🚀 节点选择
-  - RULE-SET,ChinaDomain,🎯 全球直连
-  - RULE-SET,ChinaCompanyIp,🎯 全球直连
-  - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
-  
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🌍 选择代理
