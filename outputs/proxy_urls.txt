@@ -4,7 +4,7 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAxMC0zIiwg
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAxMC00IiwgImFkZCI6ICIxMDQuMTkuMzguNDgiLCAicG9ydCI6IDgwODAsICJpZCI6ICJlZjhjOTU0ZS0wMTRmLTRiMzYtODI3My05YjUwODZhZmFiMzQiLCAiYWlkIjogMCwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJkdWFsLW5vdGhpbmctcHJlcC1leGl0LnRyeWNsb3VkZmxhcmUuY29tIiwgInBhdGgiOiAiZWY4Yzk1NGUtMDE0Zi00YjM2LTgyNzMtOWI1MDg2YWZhYjM0LXZtIiwgInRscyI6ICIiLCAic25pIjogImR1YWwtbm90aGluZy1wcmVwLWV4aXQudHJ5Y2xvdWRmbGFyZS5jb20iLCAiYWxwbiI6ICIifQ==
 hysteria://91.149.239.23:11223/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 0-0
 hysteria://166.1.221.169:11223/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 1-0
-hysteria2://dongtaiwang.com@207.90.239.157:15669/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@207.90.239.157:3400/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@104.192.224.139:40391/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 4-0
 hysteria2://dongtaiwang.com@104.192.224.142:40391/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 5-0
 hysteria2://dongtaiwang.com@64.110.25.11:37021/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 6-0
