@@ -32,10 +32,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-ss | 9-1
-  - 🏳 Unknown-vmess | 10-1
-  - 🇺🇸 US-vmess | 10-2
-  - 🏳 Unknown-vmess | 10-3
-  - 🏳 Unknown-vmess | 10-4
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -53,10 +49,6 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - 🇺🇸 US-ss | 9-1
-  - 🏳 Unknown-vmess | 10-1
-  - 🇺🇸 US-vmess | 10-2
-  - 🏳 Unknown-vmess | 10-3
-  - 🏳 Unknown-vmess | 10-4
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -73,10 +65,6 @@ proxy-groups:
   - ♻️ 自动选择
   - ⚖ 负载均衡
   - 🇺🇸 US-ss | 9-1
-  - 🏳 Unknown-vmess | 10-1
-  - 🇺🇸 US-vmess | 10-2
-  - 🏳 Unknown-vmess | 10-3
-  - 🏳 Unknown-vmess | 10-4
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -104,66 +92,6 @@ proxies:
   port: 11256
   cipher: 2022-blake3-chacha20-poly1305
   password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
-- name: 🏳 Unknown-vmess | 10-1
-  type: vmess
-  server: 104.26.9.22
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🇺🇸 US-vmess | 10-2
-  type: vmess
-  server: 172.64.97.235
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🏳 Unknown-vmess | 10-3
-  type: vmess
-  server: 104.19.38.28
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🏳 Unknown-vmess | 10-4
-  type: vmess
-  server: 104.19.38.48
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 91.149.239.23
