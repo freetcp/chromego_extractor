@@ -146,9 +146,9 @@ proxies:
   h2-opts:
     path: /
     host: []
-- name: 🇺🇸 US-vmess | 2-0
+- name: 🏳 Unknown-vmess | 2-0
   type: vmess
-  server: 172.64.170.111
+  server: 162.159.45.35
   port: 2082
   uuid: 86e926b9-d67a-4c8f-a35e-024631838a45
   alterId: 0
@@ -202,7 +202,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -219,7 +219,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🚀 节点选择
   type: select
@@ -236,7 +236,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: ☁ WARP前置节点
   type: select
@@ -252,7 +252,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 6-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
-  - 🇺🇸 US-vmess | 2-0
+  - 🏳 Unknown-vmess | 2-0
   - 🏳 Unknown-vmess | 3-0
 - name: 🌍 选择代理
   type: select
