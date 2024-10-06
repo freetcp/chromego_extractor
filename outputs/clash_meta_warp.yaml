@@ -52,20 +52,6 @@ proxies:
   password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
-  server: 104.192.224.138
-  port: 28850
-  ports: 20000-30000
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇺🇸 US-Hysteria | 1-0
-  type: hysteria
   server: 166.1.221.169
   port: 11223
   ports: 11223
@@ -82,13 +68,6 @@ proxies:
   type: hysteria2
   server: 207.90.239.157
   port: 3400
-  password: dongtaiwang.com
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 US-Hysteria2 | 1-0
-  type: hysteria2
-  server: 64.110.25.12
-  port: 50942
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
@@ -202,9 +181,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
@@ -220,9 +197,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
@@ -238,9 +213,7 @@ proxy-groups:
   - ☁ WARP
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
@@ -255,9 +228,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - 🇺🇸 US-ss | 9-1
   - 🇺🇸 US-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
-  - 🇺🇸 US-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
   - 🇺🇸 US-Hysteria2 | 6-0
