@@ -33,7 +33,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇺🇸 US-ss | 9-1
-  - 🇺🇸 US-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -50,7 +50,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇺🇸 US-ss | 9-1
-  - 🇺🇸 US-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -66,7 +66,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - 🇷🇺 RU-hysteria | 6-1
   - 🇺🇸 US-ss | 9-1
-  - 🇺🇸 US-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 4-0
   - 🇺🇸 US-Hysteria2 | 5-0
@@ -103,11 +103,11 @@ proxies:
   port: 11256
   cipher: 2022-blake3-chacha20-poly1305
   password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
-- name: 🇺🇸 US-Hysteria | 0-0
+- name: 🇷🇺 RU-Hysteria | 0-0
   type: hysteria
-  server: 166.1.221.169
-  port: 55555
-  ports: 55555
+  server: 46.17.43.223
+  port: 12311
+  ports: 12311
   auth-str: dongtaiwang.com
   up: 80
   down: 100
@@ -120,7 +120,7 @@ proxies:
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 207.90.239.157
-  port: 11111
+  port: 12344
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
