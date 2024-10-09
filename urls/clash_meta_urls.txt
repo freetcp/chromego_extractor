@@ -9,3 +9,4 @@ https://raw.githubusercontent.com/Alvin9999/pac2/master/quick/config.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/master/quick/3/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/clash.meta/config.yaml
 https://www.gitlabip.xyz/Alvin9999/pac2/master/clash.meta/15/config.yaml
+https://raw.githubusercontent.com/freetcp/chromego_extractor/refs/heads/main/urls/v2ray_vpn.yaml
