@@ -1,4 +1,3 @@
-https://raw.githubusercontent.com/freetcp/chromego_extractor/refs/heads/main/urls/v2ray_vpn.yaml
 https://raw.githubusercontent.com/Alvin9999/pac2/master/singbox/1/config.json
 https://raw.githubusercontent.com/Alvin9999/pac2/master/singbox/config.json
 https://fastly.jsdelivr.net/gh/Alvin9999/pac2@latest/singbox/config.json
