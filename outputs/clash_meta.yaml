@@ -1,152 +1,229 @@
-mixed-port: 7890
+port: 7890
 allow-lan: true
 mode: rule
-ipv6: true
 log-level: info
-external-controller: 0.0.0.0:9090
+unified-delay: true
+global-client-fingerprint: chrome
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: :53
   ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 180.76.76.76
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 180.76.76.76
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - router.asus.com
-    - localhost.sec.qq.com
-    - localhost.ptlogin2.qq.com
-    - +.msftconnecttest.com
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - 180.76.76.76
-    - 119.29.29.29
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
 proxies:
-  - name: ru1a
-    port: 443
-    server: 202408-ru1a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-  - name: ru2a
-    port: 443
-    server: 202408-ru2a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-  - name: de1a
-    port: 443
-    server: de1a-xded888.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
-    client-fingerprint: edge
-  - name: fr1a
-    port: 443
-    server: fr1a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-  - name: us2a
-    port: 443
-    server: 2024-us2a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-  - name: us3a
-    port: 443
-    server: 2024-us3a.88888806.xyz
-    type: trojan
-    network: ws
-    udp: true
-    password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-    skip-cert-verify: true
-    ws-opts:
-      path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
+- name: 🇷🇺 RU-hysteria | 6-1
+  type: hysteria
+  server: 46.29.166.206
+  port: 100
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸 US-ss | 9-1
+  type: ss
+  server: 108.181.22.130
+  port: 11256
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
+- name: 🇷🇺 RU-Hysteria | 0-0
+  type: hysteria
+  server: 46.17.43.223
+  port: 12311
+  ports: 12311
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇺🇸 US-Hysteria2 | 0-0
+  type: hysteria2
+  server: 207.90.239.157
+  port: 12344
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 US-Hysteria2 | 4-0
+  type: hysteria2
+  server: 104.192.224.139
+  port: 40391
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 US-Hysteria2 | 5-0
+  type: hysteria2
+  server: 104.192.224.142
+  port: 40391
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇺🇸 US-Hysteria2 | 6-0
+  type: hysteria2
+  server: 64.110.25.11
+  port: 37021
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🏳 Unknown-vmess | 0-0
+  type: vmess
+  server: 104.21.238.36
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip7.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
+- name: 🏳 Unknown-vmess | 1-0
+  type: vmess
+  server: 104.21.238.37
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip7.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
+- name: 🏳 Unknown-vmess | 2-0
+  type: vmess
+  server: 104.21.238.38
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip7.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
+- name: 🏳 Unknown-vmess | 3-0
+  type: vmess
+  server: 104.21.238.39
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip7.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
 proxy-groups:
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ru1a
-      - ru2a
-      - de1a
-      - fr1a
-      - us2a
-      - us3a
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - ru1a
-      - ru2a
-      - de1a
-      - fr1a
-      - us2a
-      - us3a
-    type: select
-  - name: 🚀 节点选择
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - ru1a
-      - ru2a
-      - de1a
-      - fr1a
-      - us2a
-      - us3a
-  - name: 🌍 选择代理
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇷🇺 RU-hysteria | 6-1
+  - 🇺🇸 US-ss | 9-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
+- name: ⚖ 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: consistent-hashing
+  proxies:
+  - 🇷🇺 RU-hysteria | 6-1
+  - 🇺🇸 US-ss | 9-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - 🇷🇺 RU-hysteria | 6-1
+  - 🇺🇸 US-ss | 9-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇺🇸 US-Hysteria2 | 0-0
+  - 🇺🇸 US-Hysteria2 | 4-0
+  - 🇺🇸 US-Hysteria2 | 5-0
+  - 🇺🇸 US-Hysteria2 | 6-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
+- name: 🌍 选择代理
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ⚖ 负载均衡
+  - 🚀 节点选择
 rules:
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,🌍 选择代理
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,🌍 选择代理
