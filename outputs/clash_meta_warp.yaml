@@ -47,7 +47,7 @@ proxies:
 - name: 🇷🇺 RU-hysteria | 6-1
   type: hysteria
   server: 46.29.166.206
-  port: 22222
+  port: 100
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -117,7 +117,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip6.9447609.xyz
+      Host: ip7.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -137,7 +137,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip6.9447609.xyz
+      Host: ip7.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -157,7 +157,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip6.9447609.xyz
+      Host: ip7.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -177,7 +177,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip6.9447609.xyz
+      Host: ip7.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
