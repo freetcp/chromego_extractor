@@ -27,21 +27,36 @@ dns:
 proxies:
 
 proxy-groups:
-  - name: 节点选择
-    type: select
-    proxies:
-      - 自动选择
-
-  - name: 自动选择
+  - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
 
+  - name: ⚖ 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+    
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ⚖ 负载均衡
+
+  - name: 🌍 选择代理
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ⚖ 负载均衡
+      - 🚀 节点选择
+
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,节点选择
+  - MATCH,🌍 选择代理
