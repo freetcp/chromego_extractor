@@ -128,6 +128,7 @@ proxy-groups:
       - fr1a
       - us2a
       - us3a
+  - name: 🚀 节点选择
     type: select
     proxies:
       - 🚀 节点选择
@@ -149,4 +150,3 @@ rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🌍 选择代理
-  
