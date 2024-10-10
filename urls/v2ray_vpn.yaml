@@ -105,30 +105,48 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-      
-proxies:
 proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ru1a
+      - ru2a
+      - de1a
+      - fr1a
+      - us2a
+      - us3a
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-
-  - name: 🚀 节点选择
+      - ru1a
+      - ru2a
+      - de1a
+      - fr1a
+      - us2a
+      - us3a
     type: select
     proxies:
+      - 🚀 节点选择
       - ♻️ 自动选择
-
+      - ru1a
+      - ru2a
+      - de1a
+      - fr1a
+      - us2a
+      - us3a
   - name: 🌍 选择代理
     type: select
     proxies:
-      - ♻️ 自动选择
       - 🚀 节点选择
-
+      - ♻️ 自动选择
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🌍 选择代理
+  
