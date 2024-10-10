@@ -105,7 +105,8 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /92024db4-eadf-4cd1-b7e5-87d047d353f0?ed=2048
-
+      
+proxies:
 proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
