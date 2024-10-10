@@ -1,19 +1,18 @@
 mixed-port: 7890
-allow-lan: false
+allow-lan: true
 mode: rule
-ipv6: false
+ipv6: true
 log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enable: true
   listen: 0.0.0.0:53
-  ipv6: false
+  ipv6: true
   default-nameserver:
     - 223.5.5.5
-    - 114.114.114.114
+    - 180.76.76.76
   nameserver:
     - 223.5.5.5
-    - 114.114.114.114
     - 119.29.29.29
     - 180.76.76.76
   enhanced-mode: fake-ip
@@ -37,7 +36,6 @@ tun:
   auto-route: true
   auto-detect-interface: true
   dns-hijack:
-    - 114.114.114.114
     - 180.76.76.76
     - 119.29.29.29
     - 223.5.5.5
@@ -112,29 +110,18 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - DIRECT
-      - ru1a
-      - ru2a
-      - de1a
-      - fr1a
-      - us2a
-      - us3a
+      
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ru1a
-      - ru2a
-      - de1a
-      - fr1a
-      - us2a
-      - us3a
-  - name: 🐟 漏网之鱼
+    
+  - name: 🌍 选择代理
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
 rules:
-  - MATCH,🐟 漏网之鱼
+  - MATCH, 🌍 选择代理
