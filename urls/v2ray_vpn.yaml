@@ -113,7 +113,7 @@ proxy-groups:
     tolerance: 50
     proxies:
     
-   - name: 🚀 节点选择
+  - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择  
