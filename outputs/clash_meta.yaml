@@ -1,74 +1,222 @@
-mode: rule
-ipv6: true
-log-level: info
+port: 7890
 allow-lan: true
-mixed-port: 7890
+mode: rule
+log-level: info
 unified-delay: true
-tcp-concurrent: true
-external-controller: :9090
-geodata-mode: true
-geox-url:
-  geoip: https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
-  geosite: https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-  mmdb: https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
-find-process-mode: strict
-keep-alive-interval: 1800
-global-client-fingerprint: random
-profile:
-  store-selected: true
-  store-fake-ip: true
-ntp:
-  enable: true
-  write-to-system: false
-  server: time.apple.com
-  port: 123
-  interval: 30
-sniffer:
-  enable: true
-  sniff:
-    TLS:
-      ports:
-      - 443
-      - 8443
-    HTTP:
-      ports:
-      - 80
-      - 8080-8880
-      override-destination: true
+global-client-fingerprint: chrome
 dns:
   enable: true
   listen: :53
   ipv6: true
-  enhanced-mode: redir-host
-  fake-ip-range: 28.0.0.1/8
-  fake-ip-filter:
-  - '*'
-  - +.lan
-  - +.local
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   default-nameserver:
   - 223.5.5.5
-  - 119.29.29.29
-  - 114.114.114.114
-  - '[2402:4e00::]'
-  - '[2400:3200::1]'
+  - 8.8.8.8
   nameserver:
-  - tls://8.8.4.4#dns
-  - tls://1.0.0.1#dns
-  - tls://[2001:4860:4860::8844]#dns
-  - tls://[2606:4700:4700::1001]#dns
-  proxy-server-nameserver:
+  - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
-  nameserver-policy:
-    geosite:cn,private:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    geosite:!cn,!private:
-    - tls://dns.google
-    - tls://cloudflare-dns.com
-proxies: []
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: 🇩🇪 DE-hysteria | 0-1
+  type: hysteria
+  server: 5.83.129.143
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🏳 Unknown-hysteria | 1-1
+  type: hysteria
+  server: 2a14:7584:d099::a
+  port: 26691
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🏳 Unknown-hysteria2 | 2-1
+  type: hysteria2
+  server: 2001:bc8:32d7:302::17
+  port: 20088
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🏳 Unknown-hysteria | 3-1
+  type: hysteria
+  server: 2001:bc8:32d7:17b::2
+  port: 11000
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇹🇷 TR-anytls | 4-1
+  type: anytls
+  server: 45.221.98.11
+  port: 11777
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 🇫🇷 FR-tuic | 4-2
+  server: 5.178.101.117
+  port: 30006
+  type: tuic
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: 🇩🇪 DE-tuic | 5-1
+  server: 83.243.86.109
+  port: 27947
+  type: tuic
+  uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
+  password: 261d95d4-73c0-4c33-957a-04b6d407bea2
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: 🇨🇳 TW-anytls | 6-1
+  type: anytls
+  server: fan2.856098.xyz
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 🇫🇷 FR-tuic | 7-1
+  server: ip1.758733.xyz
+  port: 10088
+  type: tuic
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
+  sni: apple.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: 🇫🇷 FR-tuic | 8-1
+  server: 163.172.116.154
+  port: 33887
+  type: tuic
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: 🇩🇪 DE-tuic | 9-1
+  server: 178.18.147.199
+  port: 42487
+  type: tuic
+  uuid: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  password: b35b50d1-7830-4a68-94db-349c2d2f8e43
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: 🏳 Unknown-hysteria | 11-1
+  type: hysteria
+  server: 2a14:7584:d097::a
+  port: 54177
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇩🇪 DE-Hysteria | 1-0
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇩🇪 DE-Hysteria | 2-0
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 proxy-groups:
 - name: 节点选择
   type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
   proxies: null
 rules:
 - DOMAIN,clash.razord.top,DIRECT
