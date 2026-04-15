@@ -192,7 +192,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇩🇪 DE-Hysteria | 2-0
+- name: 🇩🇪 DE-Hysteria | 3-0
   type: hysteria
   server: 5.83.129.90
   port: 54177
@@ -206,6 +206,13 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: 🇺🇸 US-Hysteria2 | 0-0
+  type: hysteria2
+  server: 157.254.223.43
+  port: 27921
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
