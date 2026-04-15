@@ -11,7 +11,3 @@ hysteria://2a14:7584:d097::a:54177/?protocol=udp&insecure=1&peer=apple.com&auth=
 hysteria://5.83.129.153:20088/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 1-0
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 3-0
 hysteria2://dongtaiwang.com@157.254.223.43:27921/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
-vless://b0a4c3bf-f170-46e2-8cef-7ed2fc2e6748@118.166.0.164:44965?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=z1_FVLAxN66t1373faq2D-BV8B7CyILrwc0vMiYw9Cc&sid=d3c7911a&type=xhttp&serviceName=/&host=&path=#🇨🇳 TW-vless | 0-0
-vless://0b138cbd-73f2-482c-ac69-c4b2ebeb891d@157.254.223.137:24089?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.microsoft.com&fp=chrome&pbk=njrfRguP2WJFUtBH11bJTaIEfGIb28V7_Sahlhbldyw&sid=54ffd503&type=xhttp&serviceName=/&host=&path=#🇺🇸 US-vless | 1-0
-vless://5cfc52bc-e701-4160-89df-930a0c040576@89.144.35.230:54582?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&fp=chrome&pbk=kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY&sid=225e2cc8&type=xhttp&serviceName=/&host=&path=#🇩🇪 DE-vless | 2-0
-vless://53d74aab-6471-4c1b-ace7-fac837d1bfbd@2a14:7584:d097::a:11330?encryption=none&flow=&security=reality&sni=toarumajutsunoindex.fandom.com&fp=chrome&pbk=3HaD5Ztk3X4gi3aJLVesV6KSJTW2YGG-hvGD3ZumJkE&sid=fa789b2f5ff56959&type=xhttp&serviceName=/&host=&path=#🏳 Unknown-vless | 3-0
