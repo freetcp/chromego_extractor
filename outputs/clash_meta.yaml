@@ -198,12 +198,12 @@ proxies:
   password: dongtaiwang.com
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇺🇸 US-Hysteria2 | 1-0
+- name: 🇫🇷 FR-Hysteria2 | 1-0
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
-  sni: www.bing.com
+  server: 163.172.126.108
+  port: 41227
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
