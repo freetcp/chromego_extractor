@@ -200,8 +200,8 @@ proxies:
   skip-cert-verify: true
 - name: 🇫🇷 FR-Hysteria2 | 1-0
   type: hysteria2
-  server: 163.172.126.108
-  port: 41227
+  server: 62.210.147.2
+  port: 43115
   password: github.com/Alvin9999-newpac/fanqiang
   sni: www.microsoft.com
   skip-cert-verify: true
