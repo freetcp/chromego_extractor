@@ -127,16 +127,13 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-hysteria | 7-1
-  type: hysteria
-  server: 62.210.29.98
-  port: 10066
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+- name: 🇫🇷 FR-hysteria2 | 7-1
+  type: hysteria2
+  server: 62.210.124.132
+  port: 64772
+  password: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇫🇷 FR-hysteria | 8-1
