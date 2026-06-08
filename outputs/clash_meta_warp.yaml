@@ -73,10 +73,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇹🇷 TR-anytls | 4-1
+- name: 🇺🇸 US-anytls | 4-1
   type: anytls
-  server: 45.221.98.11
-  port: 11777
+  server: 156.225.88.93
+  port: 23778
   password: dongtaiwang.com
   client-fingerprint: chrome
   udp: true
@@ -87,19 +87,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-tuic | 4-2
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: 🇩🇪 DE-tuic | 5-1
   server: 83.243.86.109
   port: 27947
@@ -148,6 +135,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇫🇷 FR-tuic | 9-1
+  server: 5.178.101.117
+  port: 30006
+  type: tuic
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: 🏳 Unknown-hysteria | 11-1
   type: hysteria
   server: 2a14:7584:d097::a
