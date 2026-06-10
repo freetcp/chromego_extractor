@@ -1,0 +1,33 @@
+﻿proxies:
+  - name: mieru1
+    type: mieru
+    server: 157.254.223.44
+    port: 34567
+    transport: TCP
+    username: dongtaiwang.com
+    password: dongtaiwang.com
+  - name: mieru2
+    type: mieru
+    server: 156.225.88.93
+    port: 19022
+    transport: TCP
+    username: tcp_yuyys0xg
+    password: 8n2IZjc7vUJPPEqm
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - mieru1
+      - mieru2
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 5000
+    proxies:
+      - mieru1
+      - mieru2
+rules:
+  - MATCH, 🚀 节点选择
+  
