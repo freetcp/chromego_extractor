@@ -14,3 +14,4 @@ https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/singbox/1/co
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/singbox/2/config.json
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/naiveproxy/1/config.json
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/naiveproxy/2/config.json
+https://raw.githubusercontent.com/freetcp/chromego_extractor/refs/heads/main/urls/mieru.yaml
