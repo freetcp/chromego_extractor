@@ -10,5 +10,5 @@ hysteria://2a14:7584:d097::a:54177/?protocol=udp&insecure=1&peer=apple.com&auth=
 hysteria://5.83.129.153:20088/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 1-0
 hysteria://5.83.129.153:27626/?protocol=udp&insecure=1&peer=bing.com&auth=github.com/Alvin9999-newpac/fanqiang&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 2-0
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 3-0
-hysteria2://dongtaiwang.com@62.210.10.108:22000/?sni=www.microsoft.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@www.838491.xyz:13377/?sni=www.838491.xyz&insecure=0#🇫🇷 FR-Hysteria2 | 0-0
 hysteria2://github.com/Alvin9999-newpac/fanqiang@62.210.147.2:43115/?sni=www.microsoft.com&insecure=1#🇫🇷 FR-Hysteria2 | 1-0
