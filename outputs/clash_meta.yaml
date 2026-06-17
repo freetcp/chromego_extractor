@@ -87,7 +87,16 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇩🇪 DE-tuic | 5-1
+- name: 🏳 Unknown-hysteria2 | 5-1
+  type: hysteria2
+  server: hy2.561891.xyz
+  port: 44356
+  password: dongtaiwang.com
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: false
+  sni: hy2.561891.xyz
+- name: 🇩🇪 DE-tuic | 6-1
   server: 83.243.86.109
   port: 27947
   type: tuic
@@ -100,7 +109,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: 🇨🇳 TW-anytls | 6-1
+- name: 🇨🇳 TW-anytls | 7-1
   type: anytls
   server: fan2.856098.xyz
   port: 8443
@@ -114,7 +123,7 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-hysteria2 | 7-1
+- name: 🇫🇷 FR-hysteria2 | 8-1
   type: hysteria2
   server: 62.210.124.132
   port: 64772
@@ -123,7 +132,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇫🇷 FR-hysteria | 8-1
+- name: 🇫🇷 FR-hysteria | 9-1
   type: hysteria
   server: 163.172.117.163
   port: 36699
@@ -135,7 +144,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇫🇷 FR-tuic | 9-1
+- name: 🇫🇷 FR-tuic | 10-1
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -148,7 +157,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: 🏳 Unknown-hysteria | 11-1
+- name: 🏳 Unknown-hysteria | 12-1
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -160,14 +169,14 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US-mieru | 16-1
+- name: 🇺🇸 US-mieru | 18-1
   type: mieru
   server: 157.254.223.44
   port: 34567
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: 🇺🇸 US-mieru | 16-2
+- name: 🇺🇸 US-mieru | 18-2
   type: mieru
   server: 156.225.88.93
   port: 19022
