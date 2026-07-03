@@ -91,13 +91,16 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-hysteria2 | 6-1
-  type: hysteria2
-  server: clash-ip1.934618.xyz
-  port: 18271
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: clash-ip1.934618.xyz
-  skip-cert-verify: false
+- name: 🇫🇷 FR-hysteria | 6-1
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇫🇷 FR-hysteria | 7-1
@@ -153,34 +156,6 @@ proxies:
   password: 8n2IZjc7vUJPPEqm
 - name: 🇩🇪 DE-Hysteria | 1-0
   type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇩🇪 DE-Hysteria | 2-0
-  type: hysteria
-  server: 5.83.129.153
-  port: 27626
-  ports: 27626
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇩🇪 DE-Hysteria | 3-0
-  type: hysteria
   server: 5.83.129.90
   port: 54177
   ports: 54177
@@ -195,11 +170,11 @@ proxies:
   - h3
 - name: 🇫🇷 FR-Hysteria2 | 0-0
   type: hysteria2
-  server: www.838491.xyz
-  port: 13377
-  password: dongtaiwang.com
-  sni: www.838491.xyz
-  skip-cert-verify: false
+  server: 62.210.27.216
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇫🇷 FR-Hysteria2 | 1-0
   type: hysteria2
   server: 62.210.147.2
