@@ -91,18 +91,20 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-hysteria | 6-1
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+- name: 🇺🇸 US-anytls | 6-1
+  type: anytls
+  server: 198.200.57.154
+  port: 22556
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 5
   sni: bing.com
-  skip-cert-verify: true
   alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: 🇫🇷 FR-hysteria | 7-1
   type: hysteria
   server: 163.172.117.163
@@ -115,19 +117,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇫🇷 FR-tuic | 8-1
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
+- name: 🇫🇷 FR-hysteria | 8-1
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🏳 Unknown-hysteria | 10-1
   type: hysteria
   server: 2a14:7584:d097::a
@@ -154,7 +155,7 @@ proxies:
   transport: TCP
   username: tcp_yuyys0xg
   password: 8n2IZjc7vUJPPEqm
-- name: 🇩🇪 DE-Hysteria | 1-0
+- name: 🇩🇪 DE-Hysteria | 3-0
   type: hysteria
   server: 5.83.129.90
   port: 54177
