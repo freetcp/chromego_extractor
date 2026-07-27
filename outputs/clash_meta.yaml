@@ -55,15 +55,18 @@ proxies:
   port: 18001
   password: fanvpn.net
   sni: anytls.864106.xyz
-- name: 🏳 Unknown-hysteria2 | 3-1
-  type: hysteria2
-  server: hy2.561891.xyz
-  port: 44356
-  password: dongtaiwang.com
+- name: 🇫🇷 FR-hysteria | 3-1
+  type: hysteria
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-  skip-cert-verify: false
-  sni: hy2.561891.xyz
 - name: 🇩🇪 DE-tuic | 4-1
   server: 83.243.86.109
   port: 27947
@@ -96,18 +99,6 @@ proxies:
   server: 62.210.70.191
   port: 23556
   auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇫🇷 FR-hysteria | 7-1
-  type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
