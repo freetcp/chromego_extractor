@@ -5,5 +5,3 @@ hysteria://62.210.70.191:23556/?protocol=udp&insecure=1&peer=bing.com&auth=githu
 hysteria://163.172.117.163:36699/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇫🇷 FR-hysteria | 7-1
 hysteria://2a14:7584:d097::a:54177/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 10-1
 hysteria://5.83.129.90:54177/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 3-0
-hysteria2://github.com/Alvin9999-newpac/fanqiang@62.210.7.139:60111/?sni=bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
-hysteria2://github.com/Alvin9999-newpac/fanqiang@62.210.147.2:43115/?sni=www.microsoft.com&insecure=1#🇫🇷 FR-Hysteria2 | 1-0
