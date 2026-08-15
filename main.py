@@ -443,8 +443,8 @@ def write_proxy_urls_file(output_file, proxies):
                     auth = proxy['auth-str']
                 except:
                     auth = proxy['auth_str']
-                upmbps = proxy.get('up', "11")
-                downmbps = proxy.get('down', "55")
+                upmbps = proxy.get('up', "50")
+                downmbps = proxy.get('down', "200")
                 alpn = proxy['alpn']
                 alpn = ','.join(alpn) # 将 `alpn` 列表转换为逗号分隔的字符串
                 obfs = proxy.get('obfs', "")
