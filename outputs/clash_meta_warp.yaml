@@ -106,8 +106,8 @@ proxies:
   port: 54177
   ports: 54177
   auth-str: dongtaiwang.com
-  up: 80
-  down: 100
+  up: 50
+  down: 200
   fast-open: true
   protocol: udp
   sni: apple.com
