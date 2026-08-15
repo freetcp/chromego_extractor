@@ -448,7 +448,7 @@ def write_proxy_urls_file(output_file, proxies):
                 alpn = proxy['alpn']
                 alpn = ','.join(alpn) # 将 `alpn` 列表转换为逗号分隔的字符串
                 obfs = proxy.get('obfs', "")
-                proxy_url = f"hysteria://{server}:{port}/?protocol={protocol}&insecure={insecure}&peer={peer}&auth={auth}&upmbps={upmbps}&downmbps={downmbps}&alpn={alpn}&obfs={obfs}#{name}"
+                proxy_url = f"hysteria://{server}:{port}/?protocol={protocol}&insecure={insecure}&peer={peer}&auth={auth}&upmbps={50}&downmbps={200}&alpn={alpn}&obfs={obfs}#{name}"
             
             elif(proxy['type'] == "hysteria2"):
                 name = proxy['name']
