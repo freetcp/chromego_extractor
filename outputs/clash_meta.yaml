@@ -79,8 +79,8 @@ proxies:
 - name: 🇫🇷 FR-hysteria | 5-1
   type: hysteria
   server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  port: 24667
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -93,6 +93,18 @@ proxies:
   server: 163.172.117.163
   port: 36699
   auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-hysteria | 7-1
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
   alpn:
