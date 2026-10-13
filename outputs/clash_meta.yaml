@@ -112,6 +112,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇺🇸 US-Hysteria | 1-0
+  type: hysteria
+  server: 107.149.207.185
+  port: 443
+  ports: 443
+  auth-str: dongtaiwang.com
+  up: 50
+  down: 200
+  fast-open: true
+  protocol: udp
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: 🇩🇪 DE-Hysteria | 3-0
   type: hysteria
   server: 5.83.129.90
