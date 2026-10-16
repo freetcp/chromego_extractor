@@ -24,6 +24,19 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
+  - name: CF官方优选1
+    type: vless
+    server: www.galgamex.net
+    port: 8880
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freews
+      headers:
+        Host: edge.freews.eu.org
+    skip-cert-verify: true
+    udp: true
   - name: CF官方优选2
     type: vless
     server: www.carousell.sg
@@ -82,6 +95,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CF官方优选1
       - CF官方优选2
       - CF官方优选3
       - CF官方优选4
@@ -89,6 +103,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     proxies:
+      - CF官方优选1
       - CF官方优选2
       - CF官方优选3
       - CF官方优选4
@@ -113,6 +128,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CF官方优选1
       - CF官方优选2
       - CF官方优选3
       - CF官方优选4
