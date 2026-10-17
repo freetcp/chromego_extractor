@@ -26,7 +26,7 @@ dns:
 proxies:
   - name: CF官方优选1
     type: vless
-    server: www.galgamex.net
+    server: cf.godns.cc
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     network: ws
@@ -52,7 +52,7 @@ proxies:
     udp: true
   - name: CF官方优选3
     type: vless
-    server: cf.3666888.xyz
+    server: www.galgamex.net
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     network: ws
@@ -89,6 +89,19 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
+  - name: CF官方优选6
+    type: vless
+    server: youxuan.cf.090227.xyz
+    port: 8880
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freews
+      headers:
+        Host: edge.freews.eu.org
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -100,6 +113,7 @@ proxy-groups:
       - CF官方优选3
       - CF官方优选4
       - CF官方优选5
+      - CF官方优选6
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -108,6 +122,7 @@ proxy-groups:
       - CF官方优选3
       - CF官方优选4
       - CF官方优选5
+      - CF官方优选6
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -133,60 +148,67 @@ proxy-groups:
       - CF官方优选3
       - CF官方优选4
       - CF官方优选5
+      - CF官方优选6
 rule-providers:
   LocalAreaNetwork:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
     path: ./rules/LocalAreaNetwork.yaml
+  UnBan:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    path: ./rules/UnBan.yaml
   BanAD:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
     path: ./rules/BanAD.yaml
   BanProgramAD:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
     path: ./rules/BanProgramAD.yaml
   GoogleCN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
     path: ./rules/GoogleCN.yaml
   SteamCN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
     path: ./rules/SteamCN.yaml
   Telegram:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
     path: ./rules/Telegram.yaml
   ProxyMedia:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
     path: ./rules/ProxyMedia.yaml
   ProxyLite:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
     path: ./rules/ProxyLite.yaml
   ChinaDomain:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
     path: ./rules/ChinaDomain.yaml
   ChinaCompanyIp:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
     path: ./rules/ChinaCompanyIp.yaml
 rules:
   - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
   - RULE-SET,BanAD,🛑 全球拦截
   - RULE-SET,BanProgramAD,🛑 全球拦截
   - RULE-SET,GoogleCN,🎯 全球直连
