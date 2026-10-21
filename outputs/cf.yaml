@@ -1,9 +1,61 @@
 mixed-port: 7890
-allow-lan: false
+tproxy-port: 7893
+bind-address: "*"
 mode: rule
-log-level: info
+log-level: silent
+find-process-mode: strict
 ipv6: false
-external-controller: 127.0.0.1:9090
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+
+external-controller: 0.0.0.0:9090
+secret: ""
+external-ui: ui
+external-ui-url: "https://v6.gh-proxy.org/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages-no-fonts.zip"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+
+tun:
+  enable: true
+  mtu: 9000
+  device: mihomo
+  stack: mips
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  auto-route: true
+  strict-route: true
+  auto-redirect: false
+  auto-detect-interface: true
+
+listeners:
+  - name: ebpf-in
+    type: ebpf
+    local:
+      enable: false
+      ipv6: false
+      bypass-private-address: false
+    shared:
+      enable: false
+      interface:
+        - wlan2
+        - br-lan
+        - br0
+      ipv6: false
+      bypass-private-address: false
 dns:
   enable: true
   listen: 127.0.0.1:1053
