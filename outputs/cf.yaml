@@ -28,34 +28,6 @@ sniffer:
     QUIC:
       ports: [443, 8443]
 
-tun:
-  enable: true
-  mtu: 9000
-  device: mihomo
-  stack: mips
-  dns-hijack:
-    - any:53
-    - tcp://any:53
-  auto-route: true
-  strict-route: true
-  auto-redirect: false
-  auto-detect-interface: true
-
-listeners:
-  - name: ebpf-in
-    type: ebpf
-    local:
-      enable: false
-      ipv6: false
-      bypass-private-address: false
-    shared:
-      enable: false
-      interface:
-        - wlan2
-        - br-lan
-        - br0
-      ipv6: false
-      bypass-private-address: false
 dns:
   enable: true
   listen: 127.0.0.1:1053
