@@ -124,12 +124,18 @@
       "outbounds": [
         "auto",
         "direct",
-        "CF官方优选1",
-        "CF官方优选2",
-        "CF官方优选3",
-        "CF官方优选4",
-        "CF官方优选5",
-        "CF官方优选6"
+        "ws优选1",
+        "ws优选2",
+        "ws优选3",
+        "ws优选4",
+        "ws优选5",
+        "ws优选6",
+        "tcp优选1",
+        "tcp优选2",
+        "tcp优选3",
+        "tcp优选4",
+        "tcp优选5",
+        "tcp优选6"
       ]
     },
     {
@@ -370,24 +376,36 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "CF官方优选1",
-        "CF官方优选2",
-        "CF官方优选3",
-        "CF官方优选4",
-        "CF官方优选5",
-        "CF官方优选6"
+        "ws优选1",
+        "ws优选2",
+        "ws优选3",
+        "ws优选4",
+        "ws优选5",
+        "ws优选6",
+        "tcp优选1",
+        "tcp优选2",
+        "tcp优选3",
+        "tcp优选4",
+        "tcp优选5",
+        "tcp优选6"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "CF官方优选1",
-        "CF官方优选2",
-        "CF官方优选3",
-        "CF官方优选4",
-        "CF官方优选5",
-        "CF官方优选6"
+        "ws优选1",
+        "ws优选2",
+        "ws优选3",
+        "ws优选4",
+        "ws优选5",
+        "ws优选6",
+        "tcp优选1",
+        "tcp优选2",
+        "tcp优选3",
+        "tcp优选4",
+        "tcp优选5",
+        "tcp优选6"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -398,7 +416,7 @@
       "tag": "direct"
     },
     {
-      "tag": "CF官方优选1",
+      "tag": "ws优选1",
       "type": "vless",
       "server": "cf.godns.cc",
       "server_port": 8880,
@@ -418,7 +436,7 @@
       }
     },
     {
-      "tag": "CF官方优选2",
+      "tag": "ws优选2",
       "type": "vless",
       "server": "www.carousell.sg",
       "server_port": 8880,
@@ -438,7 +456,7 @@
       }
     },
     {
-      "tag": "CF官方优选3",
+      "tag": "ws优选3",
       "type": "vless",
       "server": "www.galgamex.net",
       "server_port": 8880,
@@ -458,7 +476,7 @@
       }
     },
     {
-      "tag": "CF官方优选4",
+      "tag": "ws优选4",
       "type": "vless",
       "server": "bestcf.030101.xyz",
       "server_port": 8880,
@@ -478,7 +496,7 @@
       }
     },
     {
-      "tag": "CF官方优选5",
+      "tag": "ws优选5",
       "type": "vless",
       "server": "cdn.cf.3666888.xyz",
       "server_port": 8880,
@@ -498,7 +516,7 @@
       }
     },
     {
-      "tag": "CF官方优选6",
+      "tag": "ws优选6",
       "type": "vless",
       "server": "youxuan.cf.090227.xyz",
       "server_port": 8880,
@@ -508,6 +526,126 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "tcp优选1",
+      "type": "vless",
+      "server": "cdn.2x.nz",
+      "server_port": 2052,
+      "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
+      "transport": {
+        "type": "ws",
+        "path": "/freetcp",
+        "headers": {
+          "Host": "edge.freetcp.kdns.fr"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "tcp优选2",
+      "type": "vless",
+      "server": "cdn.ddeed.de",
+      "server_port": 2052,
+      "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
+      "transport": {
+        "type": "ws",
+        "path": "/freetcp",
+        "headers": {
+          "Host": "edge.freetcp.kdns.fr"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "tcp优选3",
+      "type": "vless",
+      "server": "chrono24.com",
+      "server_port": 2052,
+      "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
+      "transport": {
+        "type": "ws",
+        "path": "/freetcp",
+        "headers": {
+          "Host": "edge.freetcp.kdns.fr"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "tcp优选4",
+      "type": "vless",
+      "server": "www.sloomb.com",
+      "server_port": 2052,
+      "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
+      "transport": {
+        "type": "ws",
+        "path": "/freetcp",
+        "headers": {
+          "Host": "edge.freetcp.kdns.fr"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "tcp优选5",
+      "type": "vless",
+      "server": "www.leics.police.uk",
+      "server_port": 2052,
+      "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
+      "transport": {
+        "type": "ws",
+        "path": "/freetcp",
+        "headers": {
+          "Host": "edge.freetcp.kdns.fr"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "tcp优选6",
+      "type": "vless",
+      "server": "www.akasantech.com",
+      "server_port": 2052,
+      "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
+      "transport": {
+        "type": "ws",
+        "path": "/freetcp",
+        "headers": {
+          "Host": "edge.freetcp.kdns.fr"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560
