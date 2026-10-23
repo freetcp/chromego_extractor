@@ -48,7 +48,7 @@ dns:
       - https://1.1.1.1/dns-query#🚀 节点选择
       - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-  - name: CF官方优选1
+  - name: ws优选1
     type: vless
     server: cf.godns.cc
     port: 8880
@@ -61,7 +61,7 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
-  - name: CF官方优选2
+  - name: ws优选2
     type: vless
     server: www.carousell.sg
     port: 8880
@@ -74,7 +74,7 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
-  - name: CF官方优选3
+  - name: ws优选3
     type: vless
     server: www.galgamex.net
     port: 8880
@@ -87,7 +87,7 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
-  - name: CF官方优选4
+  - name: ws优选4
     type: vless
     server: bestcf.030101.xyz
     port: 8880
@@ -100,7 +100,7 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
-  - name: CF官方优选5
+  - name: ws优选5
     type: vless
     server: cdn.cf.3666888.xyz
     port: 8880
@@ -113,7 +113,7 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
-  - name: CF官方优选6
+  - name: ws优选6
     type: vless
     server: youxuan.cf.090227.xyz
     port: 8880
@@ -126,27 +126,117 @@ proxies:
         Host: edge.freews.eu.org
     skip-cert-verify: true
     udp: true
+  - name: tcp优选1
+    type: vless
+    server: cdn.2x.nz
+    port: 2052
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freetcp
+      headers:
+        Host: edge.freetcp.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: tcp优选2
+    type: vless
+    server: cdn.ddeed.de
+    port: 2052
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freetcp
+      headers:
+        Host: edge.freetcp.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: tcp优选3
+    type: vless
+    server: chrono24.com
+    port: 2052
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freetcp
+      headers:
+        Host: edge.freetcp.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: tcp优选4
+    type: vless
+    server: www.sloomb.com
+    port: 2052
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freetcp
+      headers:
+        Host: edge.freetcp.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: tcp优选5
+    type: vless
+    server: www.leics.police.uk
+    port: 2052
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freetcp
+      headers:
+        Host: edge.freetcp.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: tcp优选6
+    type: vless
+    server: www.akasantech.com
+    port: 2052
+    uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
+    network: ws
+    tls: false
+    ws-opts:
+      path: /freetcp
+      headers:
+        Host: edge.freetcp.kdns.fr
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CF官方优选1
-      - CF官方优选2
-      - CF官方优选3
-      - CF官方优选4
-      - CF官方优选5
-      - CF官方优选6
+      - ws优选1
+      - ws优选2
+      - ws优选3
+      - ws优选4
+      - ws优选5
+      - ws优选6
+      - tcp优选1
+      - tcp优选2
+      - tcp优选3
+      - tcp优选4
+      - tcp优选5
+      - tcp优选6
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - CF官方优选1
-      - CF官方优选2
-      - CF官方优选3
-      - CF官方优选4
-      - CF官方优选5
-      - CF官方优选6
+      - ws优选1
+      - ws优选2
+      - ws优选3
+      - ws优选4
+      - ws优选5
+      - ws优选6
+      - tcp优选1
+      - tcp优选2
+      - tcp优选3
+      - tcp优选4
+      - tcp优选5
+      - tcp优选6
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -167,12 +257,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CF官方优选1
-      - CF官方优选2
-      - CF官方优选3
-      - CF官方优选4
-      - CF官方优选5
-      - CF官方优选6
+      - ws优选1
+      - ws优选2
+      - ws优选3
+      - ws优选4
+      - ws优选5
+      - ws优选6
+      - tcp优选1
+      - tcp优选2
+      - tcp优选3
+      - tcp优选4
+      - tcp优选5
+      - tcp优选6
 rule-providers:
   LocalAreaNetwork:
     type: http
