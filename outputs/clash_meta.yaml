@@ -32,18 +32,6 @@ sniffer:
       - 8443
   force-dns-mapping: true
   parse-extra-domain: true
-tun:
-  enable: true
-  stack: mips
-  congestion-controller: bbr3
-  auto-route: true
-  auto-detect-interface: true
-  strict-route: false
-  dns-hijack:
-  - any:53
-  - tcp://any:53
-  mtu: 1500
-  gso: true
 dns:
   enable: true
   listen: 127.0.0.1:1053
