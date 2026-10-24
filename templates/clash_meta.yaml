@@ -9,11 +9,6 @@ allow-lan: true
 unified-delay: true
 tcp-concurrent: true
 
-external-controller: 0.0.0.0:9090
-secret: ""
-external-ui: ui
-external-ui-url: "https://v6.gh-proxy.org/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages-no-fonts.zip"
-
 profile:
   store-selected: true
   store-fake-ip: true
