@@ -30,20 +30,6 @@ sniffer:
   force-dns-mapping: true
   parse-extra-domain: true
 
-tun:
-  enable: true
-  stack: mips
-  congestion-controller: bbr3 # mips专属：bbr3 / cubic；gvisor/system/mixed无效
-  auto-route: true
-  auto-detect-interface: true
-  strict-route: false # true=所有流量强制走TUN，内网不通；电脑手机一般false
-  dns-hijack:
-    - any:53
-    - tcp://any:53
-  mtu: 1500
-  gso: true # Linux生效，Windows/macOS/安卓自动忽略
-  # auto-redirect: true # 仅Linux iptables，Windows/安卓/macOS注释！
-
 dns:
   enable: true
   listen: 127.0.0.1:1053
