@@ -1,29 +1,84 @@
-port: 7890
-allow-lan: true
+mixed-port: 7890
+tproxy-port: 7893
+bind-address: "*"
 mode: rule
-log-level: info
+log-level: silent
+find-process-mode: strict
+ipv6: false
+allow-lan: true
 unified-delay: true
-global-client-fingerprint: chrome
+tcp-concurrent: true
+
+external-controller: 0.0.0.0:9090
+secret: ""
+external-ui: ui
+external-ui-url: "https://v6.gh-proxy.org/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages-no-fonts.zip"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-dns-mapping: true
+  parse-extra-domain: true
+
+tun:
+  enable: true
+  stack: mips
+  congestion-controller: bbr3 # mips专属：bbr3 / cubic；gvisor/system/mixed无效
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: false # true=所有流量强制走TUN，内网不通；电脑手机一般false
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  mtu: 1500
+  gso: true # Linux生效，Windows/macOS/安卓自动忽略
+  # auto-redirect: true # 仅Linux iptables，Windows/安卓/macOS注释！
+
 dns:
   enable: true
-  listen: :53
-  ipv6: true
+  listen: 127.0.0.1:1053
+  ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  default-nameserver: 
+  fake-ip-filter:
+    - "+.lan"
+    - "+.local"
+    - "+.home.arpa"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "time.*"
+    - "+.pool.ntp.org"
+    - "stun.*.*"
+    - "+.n.n.srv.nintendo.net"
+  cache-algorithm: arc
+  use-hosts: true
+  use-system-hosts: false
+  respect-rules: true
+  default-nameserver:
     - 223.5.5.5
-    - 8.8.8.8
+    - 119.29.29.29
   nameserver:
-    - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback:
-    - https://1.0.0.1/dns-query
-    - tls://dns.google
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - 223.5.5.5
+      - 119.29.29.29
+    "geosite:category-ads-all": rcode://name_error
+
 proxies:
 
 proxy-groups:
