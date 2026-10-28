@@ -82,7 +82,7 @@ dns:
 proxies:
   - name: ws优选1
     type: vless
-    server: cf.godns.cc
+    server: doordash.com
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     network: ws
