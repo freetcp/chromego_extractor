@@ -115,7 +115,7 @@ proxies:
   down: 55 Mbps
 - name: 🇫🇷 FR-hysteria | 6-1
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
