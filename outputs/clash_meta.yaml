@@ -209,7 +209,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies: null
+  proxies:
+  - DIRECT
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
