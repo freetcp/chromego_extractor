@@ -1,71 +1,45 @@
-mixed-port: 7890
-tproxy-port: 7893
-bind-address: "*"
-mode: rule
-log-level: silent
-find-process-mode: strict
-ipv6: false
+port: 7890
 allow-lan: true
+mode: rule
+log-level: info
 unified-delay: true
-tcp-concurrent: true
-
-profile:
-  store-selected: true
-  store-fake-ip: true
-
-sniffer:
-  enable: true
-  sniff:
-    HTTP:
-      ports: [80, 8080-8880]
-    TLS:
-      ports: [443, 8443]
-    QUIC:
-      ports: [443, 8443]
-  force-dns-mapping: true
-  parse-extra-domain: true
-
+global-client-fingerprint: chrome
 dns:
   enable: true
-  listen: 127.0.0.1:1053
-  ipv6: false
+  listen: :53
+  ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "+.lan"
-    - "+.local"
-    - "+.home.arpa"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - "time.*"
-    - "+.pool.ntp.org"
-    - "stun.*.*"
-    - "+.n.n.srv.nintendo.net"
-  cache-algorithm: arc
-  use-hosts: true
-  use-system-hosts: false
-  respect-rules: true
-  default-nameserver:
+  default-nameserver: 
     - 223.5.5.5
-    - 119.29.29.29
+    - 8.8.8.8
   nameserver:
-    - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fallback:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-  nameserver-policy:
-    "geosite:cn":
-      - 223.5.5.5
-      - 119.29.29.29
-    "geosite:category-ads-all": rcode://name_error
-
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
 proxies:
 
 proxy-groups:
   - name: 节点选择
     type: select
-    proxies: 
+    proxies:
+      - 自动选择
+      - DIRECT
+
+  - name: 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
