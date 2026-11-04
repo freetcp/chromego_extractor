@@ -77,6 +77,28 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
+- name: 🇺🇸 US-shadowquic | 0-3
+  type: shadowquic
+  server: 198.2.214.27
+  port: 22448
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.bing.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-control: bbr
+- name: 🏳 Unknown-shadowquic | 0-4
+  type: shadowquic
+  server: 142.249.37.83
+  port: 1443
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+  sni: www.yahoo.com
+  alpn:
+  - h3
+  zero-rtt: true
+  congestion-control: bbr
 - name: 🇩🇪 DE-hysteria | 1-1
   type: hysteria
   server: 5.83.129.143
