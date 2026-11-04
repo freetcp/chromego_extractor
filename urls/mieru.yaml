@@ -13,6 +13,26 @@
     transport: TCP
     username: dongtaiwang.com
     password: dongtaiwang.com
+  - name: quic1
+    type: shadowquic
+    server: 198.2.214.27
+    port: 22448
+    username: dongtaiwang.com
+    password: dongtaiwang.com
+    sni: www.bing.com
+    alpn: [h3]
+    zero-rtt: true
+    congestion-control: bbr
+  - name: quic2
+    type: shadowquic
+    server: 142.249.37.83
+    port: 1443
+    username: dongtaiwang.com
+    password: dongtaiwang.com
+    sni: www.yahoo.com
+    alpn: [h3]
+    zero-rtt: true
+    congestion-control: bbr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -20,6 +40,8 @@ proxy-groups:
       - ♻️ 自动选择
       - mieru1
       - mieru2
+      - quic1
+      - quic2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -28,6 +50,8 @@ proxy-groups:
     proxies:
       - mieru1
       - mieru2
+      - quic1
+      - quic2
 rules:
   - MATCH, 🚀 节点选择
   
