@@ -65,17 +65,16 @@ proxies:
 proxy-groups:
   - name: 节点选择
     type: select
-    proxies:
+    proxies: 
       - 自动选择
-
 
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies:
-
+    proxies: 
+      - DIRECT
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
