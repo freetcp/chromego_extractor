@@ -67,7 +67,7 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
-      - DIRECT
+
 
   - name: 自动选择
     type: url-test
@@ -76,10 +76,10 @@ proxy-groups:
     tolerance: 50
     proxies:
 
+
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,节点选择
-  
