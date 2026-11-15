@@ -341,35 +341,35 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "ws优选1"
       ]
     },
     {
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "ws优选1"
       ]
     },
     {
       "tag": "Singapore",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "ws优选1"
       ]
     },
     {
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "ws优选1"
       ]
     },
     {
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "ws优选1"
       ]
     },
     {
@@ -416,9 +416,9 @@
       "tag": "direct"
     },
     {
+      "type": "vless",
       "tag": "ws优选1",
-      "type": "vless",
-      "server": "doordash.com",
+      "server": "bbs.alipansou.com",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -426,19 +426,13 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "ws优选2",
-      "type": "vless",
-      "server": "www.carousell.sg",
+      "server": "cdn.ctn32.us.kg",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -446,19 +440,13 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "ws优选3",
-      "type": "vless",
-      "server": "www.galgamex.net",
+      "server": "cdn.204910.best",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -466,19 +454,13 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "ws优选4",
-      "type": "vless",
-      "server": "bestcf.030101.xyz",
+      "server": "idc.urkeji.com",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -486,19 +468,13 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "ws优选5",
-      "type": "vless",
-      "server": "cdn.cf.3666888.xyz",
+      "server": "kniu.cc",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -506,19 +482,13 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "ws优选6",
-      "type": "vless",
-      "server": "youxuan.cf.090227.xyz",
+      "server": "cdn.cnno.de",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -526,19 +496,13 @@
         "path": "/freews",
         "headers": {
           "Host": "edge.freews.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "tcp优选1",
-      "type": "vless",
-      "server": "cdn.2x.nz",
+      "server": "www.5h.com",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -546,19 +510,13 @@
         "path": "/freetcp",
         "headers": {
           "Host": "edge.freetcp.kdns.fr"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "tcp优选2",
-      "type": "vless",
-      "server": "cdn.ddeed.de",
+      "server": "auto.dolby.dpdns.org",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -566,19 +524,13 @@
         "path": "/freetcp",
         "headers": {
           "Host": "edge.freetcp.kdns.fr"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "tcp优选3",
-      "type": "vless",
-      "server": "chrono24.com",
+      "server": "emos.prlo.de",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -586,19 +538,13 @@
         "path": "/freetcp",
         "headers": {
           "Host": "edge.freetcp.kdns.fr"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "tcp优选4",
-      "type": "vless",
-      "server": "www.sloomb.com",
+      "server": "saas.sin.fan",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -606,19 +552,13 @@
         "path": "/freetcp",
         "headers": {
           "Host": "edge.freetcp.kdns.fr"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
+      "type": "vless",
       "tag": "tcp优选5",
-      "type": "vless",
-      "server": "www.leics.police.uk",
+      "server": "eii.at",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -626,19 +566,13 @@
         "path": "/freetcp",
         "headers": {
           "Host": "edge.freetcp.kdns.fr"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     },
     {
-      "tag": "tcp优选6",
       "type": "vless",
-      "server": "www.akasantech.com",
+      "tag": "tcp优选6",
+      "server": "cf.vvhan.com",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -646,13 +580,7 @@
         "path": "/freetcp",
         "headers": {
           "Host": "edge.freetcp.kdns.fr"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
+        }
       }
     }
   ],
@@ -671,12 +599,13 @@
       "server": "local"
     },
     "auto_detect_interface": true,
-    "final": "auto",
+    "final": "Proxy",
     "rules": [
       {
         "domain_suffix": [
           "nodebuf.com"
         ],
+        "action": "route",
         "outbound": "Proxy"
       },
       {
