@@ -80,162 +80,162 @@ dns:
     "geosite:category-ads-all": rcode://name_error
 
 proxies:
-  - name: ws优选1
-    type: vless
-    server: doordash.com
+  - type: vless
+    name: ws优选1
+    server: bbs.alipansou.com
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freews
       headers:
         Host: edge.freews.eu.org
-    skip-cert-verify: true
-    udp: true
-  - name: ws优选2
-    type: vless
-    server: www.carousell.sg
+  - type: vless
+    name: ws优选2
+    server: cdn.ctn32.us.kg
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freews
       headers:
         Host: edge.freews.eu.org
-    skip-cert-verify: true
-    udp: true
-  - name: ws优选3
-    type: vless
-    server: www.galgamex.net
+  - type: vless
+    name: ws优选3
+    server: cdn.204910.best
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freews
       headers:
         Host: edge.freews.eu.org
-    skip-cert-verify: true
-    udp: true
-  - name: ws优选4
-    type: vless
-    server: bestcf.030101.xyz
+  - type: vless
+    name: ws优选4
+    server: idc.urkeji.com
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freews
       headers:
         Host: edge.freews.eu.org
-    skip-cert-verify: true
-    udp: true
-  - name: ws优选5
-    type: vless
-    server: cdn.cf.3666888.xyz
+  - type: vless
+    name: ws优选5
+    server: kniu.cc
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freews
       headers:
         Host: edge.freews.eu.org
-    skip-cert-verify: true
-    udp: true
-  - name: ws优选6
-    type: vless
-    server: youxuan.cf.090227.xyz
+  - type: vless
+    name: ws优选6
+    server: cdn.cnno.de
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freews
       headers:
         Host: edge.freews.eu.org
-    skip-cert-verify: true
-    udp: true
-  - name: tcp优选1
-    type: vless
-    server: cdn.2x.nz
+  - type: vless
+    name: tcp优选1
+    server: www.5h.com
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freetcp
       headers:
         Host: edge.freetcp.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: tcp优选2
-    type: vless
-    server: cdn.ddeed.de
+  - type: vless
+    name: tcp优选2
+    server: auto.dolby.dpdns.org
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freetcp
       headers:
         Host: edge.freetcp.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: tcp优选3
-    type: vless
-    server: chrono24.com
+  - type: vless
+    name: tcp优选3
+    server: emos.prlo.de
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freetcp
       headers:
         Host: edge.freetcp.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: tcp优选4
-    type: vless
-    server: www.sloomb.com
+  - type: vless
+    name: tcp优选4
+    server: saas.sin.fan
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freetcp
       headers:
         Host: edge.freetcp.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: tcp优选5
-    type: vless
-    server: www.leics.police.uk
+  - type: vless
+    name: tcp优选5
+    server: eii.at
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freetcp
       headers:
         Host: edge.freetcp.kdns.fr
-    skip-cert-verify: true
-    udp: true
-  - name: tcp优选6
-    type: vless
-    server: www.akasantech.com
+  - type: vless
+    name: tcp优选6
+    server: cf.vvhan.com
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
-    network: ws
+    udp: true
     tls: false
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       path: /freetcp
       headers:
         Host: edge.freetcp.kdns.fr
-    skip-cert-verify: true
-    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -305,58 +305,80 @@ rule-providers:
   LocalAreaNetwork:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    path: ./rules/LocalAreaNetwork.yaml
+    path: ./rules/LocalAreaNetwork.list
+    interval: 86400
   UnBan:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    path: ./rules/UnBan.yaml
+    path: ./rules/UnBan.list
+    interval: 86400
   BanAD:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-    path: ./rules/BanAD.yaml
+    path: ./rules/BanAD.list
+    interval: 86400
   BanProgramAD:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    path: ./rules/BanProgramAD.yaml
+    path: ./rules/BanProgramAD.list
+    interval: 86400
   GoogleCN:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./rules/GoogleCN.yaml
+    path: ./rules/GoogleCN.list
+    interval: 86400
   SteamCN:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    path: ./rules/SteamCN.yaml
+    path: ./rules/SteamCN.list
+    interval: 86400
   Telegram:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-    path: ./rules/Telegram.yaml
+    path: ./rules/Telegram.list
+    interval: 86400
   ProxyMedia:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    path: ./rules/ProxyMedia.yaml
+    path: ./rules/ProxyMedia.list
+    interval: 86400
   ProxyLite:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
-    path: ./rules/ProxyLite.yaml
+    path: ./rules/ProxyLite.list
+    interval: 86400
   ChinaDomain:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    path: ./rules/ChinaDomain.yaml
+    path: ./rules/ChinaDomain.list
+    interval: 86400
   ChinaCompanyIp:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    path: ./rules/ChinaCompanyIp.yaml
+    path: ./rules/ChinaCompanyIp.list
+    interval: 86400
 rules:
   - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
@@ -372,3 +394,4 @@ rules:
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
