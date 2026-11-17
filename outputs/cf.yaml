@@ -108,7 +108,7 @@ proxies:
         Host: edge.freews.eu.org
   - type: vless
     name: ws优选3
-    server: cdn.204910.best
+    server: jobsdb.com
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     udp: true
@@ -147,7 +147,7 @@ proxies:
         Host: edge.freews.eu.org
   - type: vless
     name: ws优选6
-    server: cdn.cnno.de
+    server: ahrefs.com
     port: 8880
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     udp: true
@@ -160,7 +160,7 @@ proxies:
         Host: edge.freews.eu.org
   - type: vless
     name: tcp优选1
-    server: www.5h.com
+    server: www.broadcom.com
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     udp: true
@@ -186,7 +186,7 @@ proxies:
         Host: edge.freetcp.kdns.fr
   - type: vless
     name: tcp优选3
-    server: emos.prlo.de
+    server: www.bis.gov
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     udp: true
@@ -225,7 +225,7 @@ proxies:
         Host: edge.freetcp.kdns.fr
   - type: vless
     name: tcp优选6
-    server: cf.vvhan.com
+    server: fbi.gov
     port: 2052
     uuid: 118eaa67-154b-436d-8e7e-d31b89f6666c
     udp: true
@@ -309,13 +309,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
     path: ./rules/LocalAreaNetwork.list
     interval: 86400
-  UnBan:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    path: ./rules/UnBan.list
-    interval: 86400
   BanAD:
     type: http
     behavior: classical
@@ -382,7 +375,6 @@ rule-providers:
 rules:
   - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
-  - RULE-SET,UnBan,🎯 全球直连
   - RULE-SET,BanAD,🛑 全球拦截
   - RULE-SET,BanProgramAD,🛑 全球拦截
   - RULE-SET,GoogleCN,🎯 全球直连
@@ -394,4 +386,3 @@ rules:
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
-
