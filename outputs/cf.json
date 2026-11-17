@@ -446,7 +446,7 @@
     {
       "type": "vless",
       "tag": "ws优选3",
-      "server": "cdn.204910.best",
+      "server": "jobsdb.com",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -488,7 +488,7 @@
     {
       "type": "vless",
       "tag": "ws优选6",
-      "server": "cdn.cnno.de",
+      "server": "ahrefs.com",
       "server_port": 8880,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -502,7 +502,7 @@
     {
       "type": "vless",
       "tag": "tcp优选1",
-      "server": "www.5h.com",
+      "server": "www.broadcom.com",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -530,7 +530,7 @@
     {
       "type": "vless",
       "tag": "tcp优选3",
-      "server": "emos.prlo.de",
+      "server": "www.bis.gov",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
@@ -572,7 +572,7 @@
     {
       "type": "vless",
       "tag": "tcp优选6",
-      "server": "cf.vvhan.com",
+      "server": "fbi.gov",
       "server_port": 2052,
       "uuid": "118eaa67-154b-436d-8e7e-d31b89f6666c",
       "transport": {
