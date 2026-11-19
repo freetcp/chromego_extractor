@@ -113,7 +113,7 @@ proxies:
   down: 55 Mbps
 - name: 🇺🇸 US-hysteria | 2-1
   type: hysteria
-  server: 38.6.222.130
+  server: 38.6.222.131
   port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -125,9 +125,9 @@ proxies:
   down: 55 Mbps
 - name: 🇺🇸 US-hysteria | 3-1
   type: hysteria
-  server: 198.200.57.142
-  port: 22335
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  server: 38.6.222.132
+  port: 11008
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -173,7 +173,7 @@ proxies:
   down: 55 Mbps
 - name: 🇺🇸 US-Hysteria | 1-0
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth-str: dongtaiwang.com
