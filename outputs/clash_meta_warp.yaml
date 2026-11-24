@@ -79,11 +79,11 @@ proxies:
   password: dongtaiwang.com
 - name: 🇺🇸 US-shadowquic | 0-3
   type: shadowquic
-  server: 198.2.214.27
-  port: 22448
+  server: 198.247.0.165
+  port: 25443
   username: dongtaiwang.com
   password: dongtaiwang.com
-  sni: www.bing.com
+  sni: www.yahoo.com
   alpn:
   - h3
   zero-rtt: true
@@ -91,7 +91,7 @@ proxies:
 - name: 🏳 Unknown-shadowquic | 0-4
   type: shadowquic
   server: 142.249.37.83
-  port: 1443
+  port: 52889
   username: dongtaiwang.com
   password: dongtaiwang.com
   sni: www.yahoo.com
