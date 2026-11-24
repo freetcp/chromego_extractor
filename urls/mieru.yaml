@@ -15,18 +15,18 @@
     password: dongtaiwang.com
   - name: quic1
     type: shadowquic
-    server: 198.2.214.27
-    port: 22448
+    server: 198.247.0.165
+    port: 25443
     username: dongtaiwang.com
     password: dongtaiwang.com
-    sni: www.bing.com
+    sni: www.yahoo.com
     alpn: [h3]
     zero-rtt: true
     congestion-control: bbr
   - name: quic2
     type: shadowquic
     server: 142.249.37.83
-    port: 1443
+    port: 52889
     username: dongtaiwang.com
     password: dongtaiwang.com
     sni: www.yahoo.com
