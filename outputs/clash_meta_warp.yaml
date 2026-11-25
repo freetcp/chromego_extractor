@@ -128,6 +128,8 @@ proxies:
   server: 198.247.124.187
   port: 23456
   password: dongtaiwang.com
+  up: 10
+  down: 10
   sni: www.bing.com
   skip-cert-verify: true
   alpn:
@@ -168,6 +170,26 @@ proxies:
 - name: 🏳 Unknown-hysteria2 | 8-1
   type: hysteria2
   server: 2001:bc8:32d7:17b::12
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🏳 Unknown-hysteria2 | 9-1
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::13
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🏳 Unknown-hysteria2 | 10-1
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::14
   port: 22000
   password: dongtaiwang.com
   sni: www.microsoft.com
