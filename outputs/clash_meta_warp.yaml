@@ -63,43 +63,7 @@ dns:
     - 119.29.29.29
     geosite:category-ads-all: rcode://name_error
 proxies:
-- name: 🇺🇸 US-mieru | 0-1
-  type: mieru
-  server: 198.200.57.141
-  port: 55334
-  transport: TCP
-  username: alvin9999.com
-  password: alvin9999.com
-- name: 🇺🇸 US-mieru | 0-2
-  type: mieru
-  server: 157.254.223.43
-  port: 23456
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: 🇺🇸 US-shadowquic | 0-3
-  type: shadowquic
-  server: 198.247.0.165
-  port: 25443
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-  sni: www.yahoo.com
-  alpn:
-  - h3
-  zero-rtt: true
-  congestion-control: bbr
-- name: 🏳 Unknown-shadowquic | 0-4
-  type: shadowquic
-  server: 142.249.37.83
-  port: 52889
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-  sni: www.yahoo.com
-  alpn:
-  - h3
-  zero-rtt: true
-  congestion-control: bbr
-- name: 🇺🇸 US-hysteria | 1-1
+- name: 🇺🇸 US-hysteria | 0-1
   type: hysteria
   server: 38.6.222.131
   port: 11008
@@ -111,7 +75,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US-hysteria | 2-1
+- name: 🇺🇸 US-hysteria | 1-1
   type: hysteria
   server: 38.6.222.132
   port: 11008
@@ -123,7 +87,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US-hysteria2 | 3-1
+- name: 🇺🇸 US-hysteria2 | 2-1
   type: hysteria2
   server: 198.247.124.187
   port: 23456
@@ -135,7 +99,7 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🇫🇷 FR-hysteria | 5-1
+- name: 🇫🇷 FR-hysteria | 4-1
   type: hysteria
   server: 62.210.124.132
   port: 24667
@@ -147,7 +111,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🏳 Unknown-hysteria2 | 6-1
+- name: 🏳 Unknown-hysteria2 | 5-1
   type: hysteria2
   server: 2001:bc8:32d7:17b::10
   port: 22000
@@ -157,7 +121,7 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🏳 Unknown-hysteria2 | 7-1
+- name: 🏳 Unknown-hysteria2 | 6-1
   type: hysteria2
   server: 2001:bc8:32d7:17b::11
   port: 22000
@@ -167,29 +131,9 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🏳 Unknown-hysteria2 | 8-1
+- name: 🏳 Unknown-hysteria2 | 7-1
   type: hysteria2
   server: 2001:bc8:32d7:17b::12
-  port: 22000
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: 🏳 Unknown-hysteria2 | 9-1
-  type: hysteria2
-  server: 2001:bc8:32d7:17b::13
-  port: 22000
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: 🏳 Unknown-hysteria2 | 10-1
-  type: hysteria2
-  server: 2001:bc8:32d7:17b::14
   port: 22000
   password: dongtaiwang.com
   sni: www.microsoft.com
