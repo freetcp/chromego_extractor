@@ -1,4 +1,3 @@
-https://raw.githubusercontent.com/freetcp/chromego_extractor/refs/heads/main/urls/mieru.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/quick/1/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/quick/2/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/quick/3/config.yaml
@@ -7,6 +6,5 @@ https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/clash.meta2/
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/clash.meta2/2/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/clash.meta2/3/config.yaml
 https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/clash.meta2/4/config.yaml
-https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/clash.meta2/5/config.yaml
-https://gitlab.com/free9999/ipupdate/-/raw/master/backup/img/1/2/ip/clash.meta2/6/config.yaml
+
 
